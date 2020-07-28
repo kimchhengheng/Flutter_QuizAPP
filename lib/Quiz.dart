@@ -18,7 +18,7 @@ class Quiz extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               ...(questions[index]['answertext'] as List<Map<String, Object>>).map( (answer) {
-                return Answer(answer: answer['text'], funonpress: () =>{pressHandler(answer['score'])}
+                return Answer(answer: answer['text'], funonpress: () =>{pressHandler(answer['score'] ,questions[index]['try'])}
                 );
               })
             ],

@@ -17,15 +17,18 @@ class _MyAppState extends State<MyApp> {
   var _questions = [
     {
       'questiontext': "what is 2+2?",
-      'answertext': [{'text': "4", 'score': 25}, {'text': "5", 'score': 0}]
+      'answertext': [{'text': "4", 'score': 25}, {'text': "5", 'score': 0}],
+      'try': 0
     },
     {
       'questiontext': "what is 2*3?",
-      'answertext': [{'text': "4", 'score': 0},{'text': "6", 'score': 25}]
+      'answertext': [{'text': "4", 'score': 0},{'text': "6", 'score': 25}],
+      'try': 0
     },
     {
       'questiontext': "what is 2/2?",
-      'answertext': [{'text': "1", 'score': 25}, {'text': "5", 'score': 0}, {'text': "6", 'score': 0}]
+      'answertext': [{'text': "1", 'score': 25}, {'text': "5", 'score': 0}, {'text': "6", 'score': 0}],
+      'try': 0
     },
   ];
   void _nextquestion(){
@@ -40,12 +43,17 @@ class _MyAppState extends State<MyApp> {
       });
     }
   }
-  void _answerquestion(int score){
-    _score +=score;
+  void _answerquestion(int score,  Object index ){
+
+    var num = index;
     _count++;
-    if(score !=0){
-      _nextquestion();
+    if(num==0){
+        _score +=score;
+        _questions[index]['try'] = 1;
     }
+    _nextquestion();
+
+
   }
   void _restart(){
 
