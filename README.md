@@ -1,6 +1,6 @@
 # flutter_app
 
-This is the simple quiz with start page then start the quiz, we can skip the question but if you choose the right answer it will continue to second question. And the end we can see the result from all the question
+This is the simple quiz with start page then start the quiz, we can skip the question but the score of right answer count only one time. Either we choose the right or wrong answer it will go the next question. However, we can go back and change the answer of each question. And the end we can see the result from all the question
 
 ## Getting Started
 
