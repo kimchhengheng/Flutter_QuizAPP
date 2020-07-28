@@ -1,6 +1,6 @@
 # flutter_app
 
-A new Flutter application.
+This is the simple quiz with start page then start the quiz, we can skip the question but if you choose the right answer it will continue to second question. And the end we can see the result from all the question
 
 ## Getting Started
 
