@@ -8,6 +8,11 @@ However, we can go back and change the answer of each question.<br/>
 At the end we can see the result from all the question. If is more than 50 you pass the quiz<br/>
 
 
+
+![media2_bjIiZ2gd compressed](https://user-images.githubusercontent.com/43865591/89696466-ffdceb00-d8e5-11ea-9735-d1487149c8ed.gif)
+
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
